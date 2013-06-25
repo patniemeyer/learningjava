@@ -1,0 +1,18 @@
+import javax.imageio.*;
+import javax.imageio.stream.*;
+
+invoke( name, args ) {
+	print( name +": "+ args );
+}
+
+file = new File("image.jpg");
+ImageInputStream iis = ImageIO.createImageInputStream( file );
+
+Iterator readers = ImageIO.getImageReaders( iis );
+ImageReader reader = (ImageReader)readers.next(); // choose first one
+reader.addIIOReadProgressListener( this );
+
+reader.setInput( iis, true );
+bi = reader.read( 0/*index*/ );
+
+

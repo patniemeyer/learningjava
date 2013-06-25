@@ -1,0 +1,17 @@
+import java.util.concurrent.*;
+
+exec=Executors.newFixedThreadPool(3);
+r = new Runnable() {
+	run() {
+		print("start: "+this );
+		Thread.sleep(1000);
+		print("end: "+this );
+	}
+};
+
+for(i=0; i<20; i++)
+{
+	exec.execute( r );
+	print("submitted: "+i);
+}
+

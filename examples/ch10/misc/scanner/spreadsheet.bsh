@@ -1,0 +1,15 @@
+import java.util.Scanner;
+Scanner scanner = new Scanner( new File("spreadsheet.csv") );
+scanner.useDelimiter( "(?m)^|\\s*,\\s*|$" );
+
+while( scanner.hasNextInt() ) {
+  int n = scanner.nextInt();
+  print(n);
+}
+print( scanner.hasNextLine() );
+scanner.nextLine();
+while( scanner.hasNextInt() ) {
+  int n = scanner.nextInt();
+  print(n);
+}
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>My Properties</comment>
+<entry key="myApp.ysize">79</entry>
+<entry key="myApp.xsize">52</entry>
+</properties>

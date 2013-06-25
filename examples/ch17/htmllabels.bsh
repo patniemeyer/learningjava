@@ -1,0 +1,17 @@
+
+String html=
+    "<html><table border=1>"
+    +"<tr><td>One</td><td>Two</td></tr>"
+    +"<tr><td>Three</td><td>Four</td></tr>"
+    +"</table>";
+JButton button = new JButton(html);
+p=new JPanel(); p.add(button);
+frame(p);
+
+String html2=
+    "<html><h3>Learning Java</h3>"
+    +"<img src=\"http://www.ora.com/catalog/covers/learnjava.gif\">";
+JButton button2 = new JButton(html2);
+p2=new JPanel(); p.add(button2);
+frame(p);
+

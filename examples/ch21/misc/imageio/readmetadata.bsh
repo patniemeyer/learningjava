@@ -1,0 +1,36 @@
+/*
+	I thought this might read the camera metadata, like aperture, time, etc...
+	doesn't appear to... seems to be jpg details
+*/
+import javax.imageio.*;
+import javax.imageio.stream.*;
+import javax.imageio.metadata.*;
+
+Iterator readers = ImageIO.getImageReadersByFormatName("jpg");
+ImageReader reader = (ImageReader)readers.next(); // choose the first one
+
+imageSource = new File( "image.jpg" );
+ImageInputStream iis = ImageIO.createImageInputStream( imageSource );
+
+reader.setInput( iis, true );
+
+smd = reader.getStreamMetadata();
+print( smd );
+imd = reader.getImageMetadata(0);
+print( imd );
+
+javap(imd);
+
+imd.print();
+
+import javax.xml.parsers.*;
+import org.w3c.dom.*;
+import javax.xml.transform.*;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
+Transformer transformer = TransformerFactory.newInstance().newTransformer();
+Source source = new DOMSource( imd );
+Result output = new StreamResult( System.out );
+transformer.transform( source, output );
+

@@ -1,0 +1,33 @@
+
+p = new JPanel();
+p.setBackground(Color.RED);
+
+//invoke(name,args) { print(name); }
+actionPerformed(e) { print(e); }
+
+private JMenuItem makeMenuItem(String label) {
+  JMenuItem item = new JMenuItem(label);
+  item.addActionListener( global );
+  return item;
+}
+
+JPopupMenu colorMenu = new JPopupMenu("Color");
+colorMenu.add(makeMenuItem("Red"));
+colorMenu.add(makeMenuItem("Green"));
+colorMenu.add(makeMenuItem("Blue"));
+
+f = new JFrame();
+f.pack();
+f.setSize(300,300);
+f.add(p);
+p.setComponentPopupMenu(colorMenu);
+
+f.setVisible(true);
+
+/*
+popup menu must be added *after* panel is added to frame and *after* frame is
+packed/visible 
+why?
+*/
+
+print(new JLabel().getInheritsPopupMenu());

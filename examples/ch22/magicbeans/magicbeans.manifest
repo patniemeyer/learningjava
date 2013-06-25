@@ -1,0 +1,26 @@
+
+Name: magicbeans/Dial.class
+Java-Bean: True
+
+Name: magicbeans/Trivial.class
+Java-Bean: True
+
+Name: magicbeans/TrivialComponent.class
+Java-Bean: True
+
+Name: magicbeans/Multiplier.class
+Java-Bean: True
+
+Name: magicbeans/NumericField.class
+Java-Bean: True
+
+Name: magicbeans/Timer.class
+Java-Bean: True
+
+Name: magicbeans.sunw/demo/juggler/Juggler.class
+Java-Bean: True
+
+Name: magicbeans.sunw/demo/molecule/Molecule.class
+Java-Bean: True
+
+

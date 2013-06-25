@@ -1,0 +1,36 @@
+
+import javax.imageio.ImageIO;
+import java.awt.image.*;
+
+//print( ImageIO.getWriterFormatNames() );
+out=new ByteArrayOutputStream();
+
+width=100;
+height=25;
+image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+g2=image.createGraphics();
+g2.setColor( Color.white );
+g2.fillRect(0,0,width,height);
+g2.setStroke( new BasicStroke(2) );
+g2.setColor( Color.black );
+g2.drawRect(0,0,width,height);
+
+g2.setPaint( new GradientPaint(
+    0, 0, Color.blue, width/3, 0, Color.green, true));
+g2.fillRect(0,0,width/3,height);
+
+g2.setPaint( new GradientPaint(
+    width*2/3, 0, Color.green, width, 0, Color.red, true));
+g2.fillRect(width/3,0, width/3,height);
+
+file = new File("myimage.png");
+ImageIO.write(image, "png", file);
+
+//imwriter=ImageIO.createImageOutputStream( out );
+//ImageIO.write(image, "png", imwriter);
+//ba=out.toByteArray();
+//out.flush();
+//print(ba.length);
+//t2=System.currentTimeMillis();
+//print(t2-t1);
+

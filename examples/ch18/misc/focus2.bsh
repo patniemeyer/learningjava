@@ -1,0 +1,30 @@
+
+frame=new JFrame();
+d=new JDesktopPane();
+
+inf=new JInternalFrame();
+inf.setFocusTraversalPolicy( new DefaultFocusTraversalPolicy() );
+inf.getContentPane().add( "Center", new JTextField(10) );
+inf.getContentPane().add( "North", new JTextField(10) );
+inf.getContentPane().add( "West", new JTextField(10) );
+inf.pack();
+inf.setVisible(true);
+d.add(inf);
+frame.getContentPane().add(d);
+
+/*
+inf=new JInternalFrame();
+inf.getContentPane().setLayout(new FlowLayout());
+inf.getContentPane().add(new JTextField(10) );
+inf.getContentPane().add(new JTextField(10) );
+inf.getContentPane().add(new JTextField(10) );
+inf.pack();
+inf.setVisible(true);
+d.add(inf);
+frame.getContentPane().add(d);
+*/
+
+frame.setSize(300,300);
+frame.setVisible(true);
+
+

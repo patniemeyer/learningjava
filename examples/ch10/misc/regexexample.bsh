@@ -1,0 +1,15 @@
+import java.util.regex.*;
+
+String text = "The quick brown fox jumped over the lazy ass dogs booga more lazy another ass dogs.";
+Pattern regex = Pattern.compile("lazy(.*?)dogs");
+
+Matcher matcher = regex.matcher( text );
+
+while( matcher.find() ) {
+     String matched = matcher.group(1);
+	 print( matched );
+}
+
+// ass
+
+

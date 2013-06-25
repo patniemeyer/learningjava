@@ -1,0 +1,29 @@
+
+/*
+//InputStream source  = new URL("http://pat.net/misc/a.txt").openStream();
+//File source = new File("foo.txt");
+
+String text = new Scanner( source ).useDelimiter("\\A|\\z").next();
+
+byte [] buf = new byte[ source.available() ];
+new DataInputStream( source ).readFully( buf );
+String text = new String( buf );
+
+*/
+
+/*
+InputStream source  = new URL("http://www.drudgereport.com/").openStream();
+String text = new Scanner( source ).useDelimiter("\\A").next();
+System.out.println( text.length() );
+
+*/
+
+InputStream source  = new URL("http://www.drudgereport.com/").openStream();
+
+BufferedReader br = new BufferedReader( new InputStreamReader( source ) );
+StringBuffer sb = new StringBuffer();
+for( String line; (line = br.readLine()) != null;  )
+	sb.append( line );
+
+print( sb.length() );
+

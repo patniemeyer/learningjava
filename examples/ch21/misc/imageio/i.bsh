@@ -1,0 +1,11 @@
+
+import javax.imageio.ImageIO;
+import java.awt.image.*;
+camel="image.gif";
+
+tk = java.awt.Toolkit.getDefaultToolkit();
+i = tk.createImage( camel );
+print(i);
+print( i instanceof BufferedImage ); //nope
+
+

@@ -1,0 +1,11 @@
+<!ELEMENT inventory ( animal* )>
+<!ELEMENT animal ( name, species, habitat, (food | foodRecipe), temperament, weight )>
+<!ATTLIST animal animalClass ( unknown | mammal | reptile | bird | fish ) "unknown">
+<!ELEMENT name ( #PCDATA )>
+<!ELEMENT species ( #PCDATA )>
+<!ELEMENT habitat ( #PCDATA )>
+<!ELEMENT food ( #PCDATA )>
+<!ELEMENT weight ( #PCDATA )>
+<!ELEMENT foodRecipe ( name, ingredient+ )>
+<!ELEMENT ingredient ( #PCDATA )>
+<!ELEMENT temperament ( #PCDATA )>

@@ -1,0 +1,40 @@
+<project name="learningjava" default="war" basedir=".">
+
+	<property name="war-file" value="${ant.project.name}.war"/>
+	<property name="src-dir" value="src" />
+	<property name="build-dir" value="classes" />
+	<property name="docs-dir" value="docs" />
+	<property name="webxml-file" value="all-web.xml" />
+	<property name="lib-dir" value="lib" />
+
+	<path id="lib-path">
+		<fileset dir="${lib-dir}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+
+	<target name="compile" depends="">
+		<mkdir dir="${build-dir}"/>
+		<javac srcdir="${src-dir}" destdir="${build-dir}">
+			<classpath>
+				<path refid="lib-path"/>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="war" depends="compile">
+		<war warfile="${war-file}" webxml="${webxml-file}">
+			<classes dir="${build-dir}"/>
+			<fileset dir="${docs-dir}"/>
+			<lib dir="${lib-dir}">
+				  <exclude name="servlet-api.jar"/>
+			</lib>
+		</war>
+	</target>
+
+	<target name="clean">
+		<delete dir="${build-dir}"/>
+		<delete file="${war-file}"/>
+	</target>
+
+</project>

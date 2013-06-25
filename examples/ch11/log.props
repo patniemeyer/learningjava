@@ -1,0 +1,19 @@
+
+# Default logging level
+.level = INFO
+
+# Ouput to file and console
+handlers = java.util.logging.FileHandler, java.util.logging.ConsoleHandler
+
+# Configure the file output
+java.util.logging.FileHandler.level = FINEST
+java.util.logging.FileHandler.pattern = %h/device%u.log
+java.util.logging.FileHandler.limit = 50000
+java.util.logging.FileHandler.count = 1
+java.util.logging.FileHandler.formatter = java.util.logging.SimpleFormatter
+
+# Configure the console output
+java.util.logging.ConsoleHandler.level = FINEST
+
+# Levels for specific classes
+#com.level = FINEST

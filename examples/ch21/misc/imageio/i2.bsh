@@ -1,0 +1,8 @@
+
+import javax.imageio.ImageIO;
+image="notreally.gif";
+image="i2.bsh";
+
+bi = ImageIO.read( new File(image) );
+
+print(bi);

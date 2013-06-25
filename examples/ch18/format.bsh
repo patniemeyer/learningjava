@@ -1,0 +1,18 @@
+import java.text.*;
+import javax.swing.text.*;
+
+p=Box.createVerticalBox();
+p.add(new JFormattedTextField(new Date()));
+p.add(tf=new JFormattedTextField(new SimpleDateFormat("MM/dd/yy")));
+tf.setValue(new Date());
+//tf.setFocusLostBehavior( JFormattedTextField.COMMIT );
+
+p.add(new JFormattedTextField(new Integer(1000)));
+p.add(new JFormattedTextField(new DecimalFormat("#,###")));
+p.add(new JFormattedTextField(new DecimalFormat("0.###E0")));
+
+p.add(tf=new JFormattedTextField(new MaskFormatter("(###) ###-####")));
+tf.setValue("(314) 555-1212");
+
+frame(p);
+

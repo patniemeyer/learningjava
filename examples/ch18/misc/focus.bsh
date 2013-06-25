@@ -1,0 +1,29 @@
+
+
+frame=new JFrame();
+
+Set old =
+	frame.getFocusTraversalKeys( KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS );
+AWTKeyStroke ks = 
+	AWTKeyStroke.getAWTKeyStroke( KeyEvent.VK_N, InputEvent.CTRL_DOWN_MASK );
+Set new = new HashSet( old );
+set.add( ks );
+frame.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,set);
+
+//frame.setFocusableWindowState(false);
+//frame.setFocusTraversalPolicy( new DefaultFocusTraversalPolicy() );
+//frame.setFocusTraversalPolicy( new ContainerOrderFocusTraversalPolicy() );
+
+frame.getContentPane().add( "Center", jt=new JTextField(10) );
+jt.setFocusable(true);
+frame.getContentPane().add( "North", jt=new JTextField(10) );
+jt.setFocusable(true);
+frame.getContentPane().add( "West", jt=new JTextField(10) );
+jt.setFocusable(true);
+frame.getContentPane().add( "South", jt=new JTextField(10) );
+jt.setFocusable(true);
+
+frame.pack();
+frame.setVisible(true);
+
+

@@ -1,0 +1,29 @@
+invoke( name, args ) {
+	print(name);
+}
+
+
+public void mousePressed (MouseEvent e) { 
+	mods = e.getModifiers();
+	if ( (mods & java.awt.event.InputEvent.SHIFT_MASK) != 0 )
+		print("SHIFT_MASK");
+	if ( (mods & java.awt.event.InputEvent.CTRL_MASK) != 0 )
+		print("CTRL_MASK");
+	if ( (mods & java.awt.event.InputEvent.META_MASK) != 0 )
+		print("META_MASK");
+	if ( (mods & java.awt.event.InputEvent.ALT_MASK) != 0 )
+		print("ALT_MASK");
+	if ( (mods & java.awt.event.InputEvent.BUTTON1_MASK) != 0 )
+		print("BUTTON1_MASK");
+	if ( (mods & java.awt.event.InputEvent.BUTTON2_MASK) != 0 )
+		print("BUTTON2_MASK");
+	if ( (mods & java.awt.event.InputEvent.BUTTON3_MASK) != 0 )
+		print("BUTTON3_MASK");
+}
+
+
+
+panel=new JPanel();
+panel.addMouseListener( this );
+frame(panel);
+

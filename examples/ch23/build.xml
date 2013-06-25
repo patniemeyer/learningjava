@@ -1,0 +1,37 @@
+<project name="testwrite" default="jars" basedir=".">
+
+	<property name="src-dir" value="src"/>
+	<property name="build-dir" value="classes"/>
+	<property name="unsigned-jar-file" value="UnsignedTestWrite.jar"/>
+	<property name="signed-jar-file" value="SignedTestWrite.jar"/>
+
+	<!-- Don't store your keys here! -->
+	<property name="signer-alias" value="Pat"/>
+	<property name="storepass" value="access"/>
+	<!-- Really, don't do this! -->
+	<property name="keypass" value="secure"/>
+
+	<target name="compile" depends="">
+		<mkdir dir="${build-dir}"/>
+		<javac srcdir="${src-dir}" deprecation="true" destdir="${build-dir}"/>
+	</target>
+
+	<target name="jars" depends="compile">
+		<jar jarfile="${unsigned-jar-file}">
+			<fileset dir="${build-dir}"/>
+		</jar>
+		<jar jarfile="${signed-jar-file}">
+			<fileset dir="${build-dir}"/>
+		</jar>
+		<signjar jar="${signed-jar-file}" 
+			alias="${signer-alias}" keypass="${keypass}" 
+			storepass="${storepass}"/>
+	</target>
+
+	<target name="clean">
+		<delete dir="${build-dir}"/>
+		<delete file="${unsigned-jar-file}"/>
+		<delete file="${signed-jar-file}"/>
+	</target>
+
+</project>

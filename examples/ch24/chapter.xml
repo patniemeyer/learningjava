@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>XML For Humans</title>
+
+Consider the following example:
+
+<example>
+	<xi:include parse="text" href="chapter.xml"/>
+</example>
+
+</chapter>
+

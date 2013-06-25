@@ -1,0 +1,37 @@
+<project name="magicbeans" default="jar" basedir=".">
+
+	<property name="jar-file" value="${ant.project.name}.jar"/>
+	<property name="src-dir" value="src"/>
+	<property name="build-dir" value="classes"/>
+	<property name="manifest-file" value="magicbeans.manifest" />
+	<property name="icons-dir" value="icons" />
+
+	<target name="compile" depends="">
+		<mkdir dir="${build-dir}"/>
+		<javac srcdir="${src-dir}" deprecation="true" destdir="${build-dir}"/>
+		<copy todir="${build-dir}/magicbeans/">
+            <fileset dir="${icons-dir}"/>
+        </copy>
+		<copy todir="${build-dir}">
+            <fileset dir="${src-dir}">
+				<patternset>
+					<include name="magicbeans/sunw/**/*.gif"/>
+					<include name="magicbeans/sunw/**/*.xyz"/>
+				</patternset>
+			</fileset>
+        </copy>
+
+	</target>
+
+	<target name="jar" depends="compile">
+		<jar jarfile="${jar-file}" manifest="${manifest-file}">
+			<fileset dir="${build-dir}"/>
+		</jar>
+	</target>
+
+	<target name="clean">
+		<delete dir="${build-dir}"/>
+		<delete file="${jar-file}"/>
+	</target>
+
+</project>

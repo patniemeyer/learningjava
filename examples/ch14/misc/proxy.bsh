@@ -1,0 +1,9 @@
+
+def = java.net.ProxySelector.getDefault();
+List list = def.select( new URI("http://java.sun.com/") );
+print(list.get(0).getClass());
+print(list.get(0));
+
+list = def.select( new URI("socket://java.sun.com:80/") );
+print(list.get(0).getClass());
+print(list.get(0));

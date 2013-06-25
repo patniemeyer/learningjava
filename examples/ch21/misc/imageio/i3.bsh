@@ -1,0 +1,8 @@
+
+import javax.imageio.ImageIO;
+image="myimage.png";
+
+reader = ImageIO.createImageInputStream( new File(image) );
+reader.
+
+print(bi);

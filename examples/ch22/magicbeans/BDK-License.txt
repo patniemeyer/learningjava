@@ -1,0 +1,104 @@
+
+Learning Java README:
+
+The following license applies to Sun's "Juggler" and "Molecule" Java Bean
+examples which were originally supplied with the BDK (Bean Development Kit)
+and have had minor updates for Learning Java to function in NetBeans.
+
+-------------------------------------------------------------------------
+
+Sun License:
+
+http://java.sun.com/products/javabeans/software/LICENSE.html
+
+BDK 1.0 LICENSE
+
+This license ("License") contains rights and restrictions associated
+with use of the accompanying software.
+
+Limited License Grant. Sun grants to you ("Licensee") a nonexclusive,
+nontransferable, worldwide, royalty-free license to use this release of
+Beans Development Kit Version 1.0 (the "Software"). Licensee agrees
+that except as provided in Section 2 below, it shall use the Software
+provided hereunder solely for Licensee's internal evaluation purposes
+and not for computer operations of any critical nature. This Software
+is subject to change which may cause applications developed using the
+Software to be incompatible with subsequent versions.
+
+Redistribution of Demonstration Files. Sun grants Licensee the right to
+use, modify and redistribute the Beans example and demonstration code,
+including the Bean Box ("Demos"), in both source and binary code form
+provided that (i) Licensee does not utilize the Demos in a manner which
+is disparaging to Sun; and (ii) Licensee indemnifies and holds Sun
+harmless from all claims relating to any such use or distribution of
+the Demos. Such distribution is limited to the source and binary code
+of the Demos and specifically excludes any rights to modify or
+distribute any graphical images contained in the demos.
+
+Restrictions. The Software is confidential, copyrighted proprietary
+information of Sun and title to all copies is retained by Sun and/or
+its licensors. Licensee shall not make copies of Software, other than a
+single copy of Software in machine-readable format for back-up or
+archival purposes and, if applicable, Licensee may print one copy of
+on-line documentation, in hich event all proprietary rights notices on
+Software and on-line documentation shall be reproduced and applied to
+all copies. Licensee shall not, decompile, disassemble, decrypt,
+extract, or otherwise reverse engineer Software. Except as provided in
+Section 2 above, Software may not be transferred, leased, assigned, or
+sublicensed, in whole or in part. No right, title or interest in and to
+any trademarks or trade names of Sun or Sun's licensors is granted
+hereunder. Software is not designed or intended for use in on-line
+control of aircraft, air traffic, aircraft navigation or aircraft
+communications; or in the design, construction, operation o
+
+Trademarks and Logos. Licensee acknowledges that Sun owns the Java
+trademark and all Java-related trademarks, logos and icons including
+the Coffee Cup and Duke ("Java Marks") and agrees to: (i) to comply
+with the Java Trademark Guidelines at http://
+java.sun.com/trademarks.html; (ii) not do anything harmful to or
+inconsistent with Sun's rights in the Java Marks; and (iii) assist Sun
+in protecting those rights, including assigning to Sun any rights
+acquired by Licensee in any Java Mark.
+
+Disclaimer of Warranty. Software is provided "AS IS," without a
+warranty of any kind. ALL EXPRESS OR IMPLIED REPRESENTATIONS AND
+WARRANTIES, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT, ARE HEREBY EXCLUDED.
+
+Limitation of Liability. SUN AND ITS LICENSORS SHALL NOT BE LIABLE FOR
+ANY DAMAGES SUFFERED BY LICENSEE OR ANY THIRD PARTY AS A RESULT OF
+USING OR DISTRIBUTING SOFTWARE. IN NO EVENT WILL SUN OR ITS LICENSORS
+BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES,
+HOWEVER CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT
+OF THE USE OF OR INABILITY TO USE SOFTWARE, EVEN IF SUN HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+Termination. Licensee may terminate this License at any time by
+destroying all copies of Software. This License will terminate
+immediately without notice from Sun if Licensee fails to comply with
+any provision of this License. Upon such termination, Licensee must
+destroy all copies of Software.
+
+Export Regulations. Software, including technical data, is subject to
+U.S. export control laws, including the U.S. Export Administration Act
+and its associated regulations, and may be subject to export or import
+regulations in other countries. Licensee agrees to comply strictly with
+all such regulations and acknowledges that it has the responsibility to
+obtain licenses to export, re-export, or import Software. Software may
+not be downloaded, or otherwise exported or re-exported (i) into, or to
+a national or resident of, Cuba, Iraq, Iran, North Korea, Libya, Sudan,
+Syria or any country to which the U.S. has embargoed goods; or (ii) to
+anyone on the U.S. Treasury Department's list of Specially Designated
+Nations or the U.S. Commerce Department's Table of Denial Orders.
+
+Restricted Rights. Use, duplication or disclosure by the United States
+government is subject to the restrictions as set forth in the Rights in
+Technical Data and Computer Software Clauses in DFARS 252.227-7013(c)
+(1) (ii) and FAR 52.227-19(c) (2) as applicable.
+
+Governing Law. Any action related to this License will be governed by
+California law and controlling U.S. federal law. No choice of law rules
+of any jurisdiction will apply.
+
+

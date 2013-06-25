@@ -1,0 +1,12 @@
+import java.util.Scanner;
+Scanner scanner = new Scanner( "Quantity: 42 items, Price $2.34" );
+
+scanner.findInLine("[Qq]uantity[:\\s]*");
+quantity=scanner.nextInt();
+print(quantity);
+scanner.findInLine("[Pp]rice.*\\$");
+price=scanner.nextFloat();
+print(price);
+scanner.findInLine("[Pp]rice.*\\$");
+price=scanner.nextFloat();
+print(price);

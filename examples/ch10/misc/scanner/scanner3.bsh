@@ -1,0 +1,10 @@
+
+s="this is a  test".split("\\s");
+print(s);
+
+String text = "one\ntwo\nthree four";
+s=new Scanner(text).useDelimiter("\\W");
+print( s.next() );
+print( s.next() );
+print( s.next() );
+print( s.next() );
