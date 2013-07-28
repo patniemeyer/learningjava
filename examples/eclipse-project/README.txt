@@ -1,6 +1,5 @@
 
-This directory contains two copies of the Learning Java source code packaged for eclipse.  The difference is 
-that the "appendix A" version contains a "Learning Java" folder and the "chapter 2" version has the contents at the top level of the zip file.  We apologize for the necessity of the two versions; the loading instructions in each chapter are slightly different and will be reconciled in a future update.
+This directory contains two copies of the Learning Java source code packaged for eclipse.  The difference is that the "Appendix A" version contains a "Learning Java" folder and the "Chapter 2" version has the contents at the top level of the zip file.  We apologize for the necessity of the two versions; the loading instructions in each chapter are slightly different and will be reconciled in a future update.
 
 Files
 -----
